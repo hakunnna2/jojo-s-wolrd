@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
           </span>
         </h1>
         <p className="text-sm sm:text-base md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 opacity-90 leading-relaxed">
-          Each planet is a portal to a different creative dimension. Venture into their orbits to explore unique digital experiences !
+          JoJo’s World is a collection of small digital worlds, each one a portal to a unique experience. Explore her birthday celebrations, movie nights, plane facts, and more — all in one magical universe.
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-5">
           <a 

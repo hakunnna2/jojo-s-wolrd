@@ -8,11 +8,10 @@ const Universe: React.FC = () => {
     <section id="universe" className="relative py-16 md:py-24 px-4 sm:px-6">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12 md:mb-20">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-glow">The Digital Universe</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-glow">Your Digital Universe</h2>
           <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto rounded-full"></div>
           <p className="mt-6 text-slate-400 text-sm sm:text-base max-w-xl mx-auto px-4">
-            Each planet is a portal to a different creative dimension. 
-            Venture into their orbits to explore unique digital experiences.
+           Each JoJo’s planet is a portal to a different creative dimension. 
           </p>
         </div>
 
