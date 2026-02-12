@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
           </span>
         </h1>
         <p className="text-sm sm:text-base md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 opacity-90 leading-relaxed">
-          Every world begins here. Experience a cinematic journey through a curated digital universe of creativity and code.
+          Each planet is a portal to a different creative dimension. Venture into their orbits to explore unique digital experiences !
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-5">
           <a 

@@ -5,7 +5,7 @@ export const PLANETS: Planet[] = [
   {
     id: '1',
     name: 'Birthday Planet',
-    description: 'A little world of joy for JoJo’s special day.',
+    description: 'A little world for JoJo’s birthday.',
     color: 'border-pink-500',
     glowColor: 'shadow-pink-500/40',
     link: 'https://jojo-birthday02.netlify.app/',
@@ -14,7 +14,7 @@ export const PLANETS: Planet[] = [
   {
     id: '2',
     name: 'Movie Night Planet',
-    description: 'Cozy cinematic dreams for fun nights.',
+    description: 'A place for cozy movie nights.',
     color: 'border-cyan-400',
     glowColor: 'shadow-cyan-400/40',
     link: 'https://movie-night-jojo.netlify.app/',
@@ -23,7 +23,7 @@ export const PLANETS: Planet[] = [
   {
     id: '3',
     name: 'Planes Data Planet',
-    description: 'Explore the skies and discover cool planes',
+    description: 'Discover fun aircraft facts here.',
     color: 'border-purple-500',
     glowColor: 'shadow-purple-500/40',
     link: 'https://justplane.netlify.app/',
@@ -32,7 +32,7 @@ export const PLANETS: Planet[] = [
   {
     id: '4',
     name: '? ? ?',
-    description: 'A mysterious orbit… something magical is coming soon!',
+    description: 'Something magical is coming soon!',
     color: 'border-slate-700',
     glowColor: 'shadow-slate-700/20',
     link: '#',
@@ -41,7 +41,7 @@ export const PLANETS: Planet[] = [
   {
     id: '5',
     name: '? ? ?',
-    description: 'A mysterious orbit… something magical is coming soon!',
+    description: 'Something magical is coming soon!',
     color: 'border-slate-700',
     glowColor: 'shadow-slate-700/20',
     link: '#',
@@ -50,7 +50,7 @@ export const PLANETS: Planet[] = [
   {
     id: '6',
     name: '? ? ?',
-    description: 'A mysterious orbit… something magical is coming soon!',
+    description: 'Something magical is coming soon!',
     color: 'border-slate-700',
     glowColor: 'shadow-slate-700/20',
     link: '#',
