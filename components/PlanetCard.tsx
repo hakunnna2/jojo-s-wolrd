@@ -56,7 +56,7 @@ const PlanetCard: React.FC<PlanetCardProps> = ({ planet }) => {
           rel="noopener noreferrer"
           className="px-6 py-2 rounded-full text-xs font-bold tracking-widest uppercase border border-white/20 hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_15px_rgba(255,255,255,0.05)]"
         >
-          Enter Orbit
+          Enter Planet
         </a>
       )}
     </div>
