@@ -5,11 +5,42 @@ import Hero from './components/Hero';
 import Universe from './components/Universe';
 import ScrollToTop from './components/ScrollToTop';
 import InstallNotification from './components/InstallNotification';
+import UpdateNotification from './components/UpdateNotification';
 
 const App: React.FC = () => {
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
   const [showInstall, setShowInstall] = useState(false);
   const [notificationClosed, setNotificationClosed] = useState(false);
+  const [updateAvailable, setUpdateAvailable] = useState(false);
+  const [waitingWorker, setWaitingWorker] = useState<ServiceWorker | null>(null);
+  // Listen for service worker updates
+  useEffect(() => {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        window.location.reload();
+      });
+      navigator.serviceWorker.getRegistration().then(reg => {
+        if (!reg) return;
+        reg.addEventListener('updatefound', () => {
+          const newWorker = reg.installing;
+          if (newWorker) {
+            newWorker.addEventListener('statechange', () => {
+              if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                setWaitingWorker(newWorker);
+                setUpdateAvailable(true);
+              }
+            });
+          }
+        });
+      });
+    }
+  }, []);
+
+  const handleUpdate = () => {
+    if (waitingWorker) {
+      waitingWorker.postMessage({ type: 'SKIP_WAITING' });
+    }
+  };
 
   useEffect(() => {
     const handler = (e: any) => {
@@ -38,6 +69,9 @@ const App: React.FC = () => {
 
   return (
     <div className="relative w-full min-h-screen group bg-black text-white selection:bg-pink-500/30">
+      {updateAvailable && (
+        <UpdateNotification onReload={handleUpdate} />
+      )}
       {showInstall && !notificationClosed && (
         <InstallNotification onInstall={handleInstallClick} onClose={handleNotificationClose} />
       )}
