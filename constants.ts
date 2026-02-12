@@ -32,7 +32,7 @@ export const PLANETS: Planet[] = [
   {
     id: '4',
     name: '? ? ?',
-    description: 'A mysterious signal emanating from the far reaches of the void.',
+    description: 'A mysterious orbit… something magical is coming soon!',
     color: 'border-slate-700',
     glowColor: 'shadow-slate-700/20',
     link: '#',
@@ -41,7 +41,7 @@ export const PLANETS: Planet[] = [
   {
     id: '5',
     name: '? ? ?',
-    description: 'Data fragments swirling in an unstable gravitational field.',
+    description: 'A mysterious orbit… something magical is coming soon!',
     color: 'border-slate-700',
     glowColor: 'shadow-slate-700/20',
     link: '#',
@@ -50,7 +50,7 @@ export const PLANETS: Planet[] = [
   {
     id: '6',
     name: '? ? ?',
-    description: 'The final frontier. An unknown destination awaits.',
+    description: 'A mysterious orbit… something magical is coming soon!',
     color: 'border-slate-700',
     glowColor: 'shadow-slate-700/20',
     link: '#',
